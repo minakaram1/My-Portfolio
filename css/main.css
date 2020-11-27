@@ -1,0 +1,909 @@
+/* Start Global Style to Whole Website */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Finish Global Style to Whole Website */
+
+/* Start Style Website Header */
+
+header {
+    position: relative;
+}
+
+header .top-bar nav ul {
+    position: fixed;
+    left: -100%;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 60px;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+header .top-bar nav ul.show-nav {
+    left: 0;
+}
+
+header .top-bar nav ul li {
+    padding: 17px 0;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+header .top-bar nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+}
+
+header .top-bar nav ul li.active a {
+    font-weight: bold;
+}
+
+header .top-bar nav ul li a span {
+    margin-left: 20px;
+    text-transform: uppercase;
+    order: 2;
+}
+
+header .top-bar .mobile-btn {
+    position: absolute;
+    padding: 8px;
+    left: 85%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    z-index: 9999;
+}
+
+header .top-bar .mobile-btn.allpages {
+    margin-top: 10px;
+    position: fixed;
+}
+
+header .top-bar .mobile-btn .line {
+    height: 4px;
+    width: 35px;
+    margin: 5px 0;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+header .top-bar .close-sign {
+    padding-top: 20px;
+}
+
+header .top-bar .close-sign .line {
+    margin: 0 0 -3px 0;
+}
+
+header .top-bar .close-sign .line:first-of-type {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+header .top-bar .close-sign .line:nth-of-type(2) {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+header .top-bar .close-sign .line:last-of-type {
+    display: none;
+}
+
+header .banner {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+header .banner .banner-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    transform: rotate(75deg) translateY(113%);
+    -webkit-transform: rotate(75deg) translateY(113%);
+    -moz-transform: rotate(75deg) translateY(113%);
+    -ms-transform: rotate(75deg) translateY(113%);
+    -o-transform: rotate(75deg) translateY(113%);
+    z-index: -1;
+    display: none;
+}
+
+header .color-setting {
+    display: flex;
+    position: fixed;
+    top: 28%;
+    left: -240px;
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+header .color-setting.allpages {
+    top: 200px;
+}
+
+header .color-setting.show-color-setting {
+    left: 0;
+}
+
+header .color-setting .color-setting-content {
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+header .color-setting .color-setting-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+header .color-setting .color-setting-text h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header .color-setting .color-setting-text svg {
+    font-size: 20px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+header .color-setting .color-setting-colors {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
+header .color-setting .color-setting-colors .color-setting-color {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+header .color-setting .color-setting-colors .color-setting-color.active, header .banner .color-setting .color-setting-colors .color-setting-color:hover {
+    opacity: 1;
+}
+
+header .color-setting .color-setting-colors .color-setting-color {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+header .color-setting .color-setting-icon {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    text-align: center;
+    padding-top: 13px;
+    font-size: 22px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+header .banner .banner-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 300px;
+}
+
+header .banner .banner-box .banner-box-image {
+    flex-basis: 35%;
+    margin: 30px 0 0 30px;
+    display: none;
+}
+
+header .banner .banner-box .banner-box-image img {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+header .banner .banner-box .banner-box-text {
+    flex-basis: 85%;
+    margin: auto;
+}
+
+header .banner .banner-box .banner-box-text span {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+header .banner .banner-box .banner-box-text h2 {
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+header .banner .banner-box .banner-box-text h2 span {
+    font-size: 40px;
+}
+
+header .banner .banner-box .banner-box-text p {
+    line-height: 2em;
+    margin-bottom: 50px;
+}
+
+header .banner .banner-box .banner-box-text a {
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+header .banner .banner-box .banner-box-text a span {
+    font-size: 16px;
+}
+
+header .banner .banner-box .banner-box-text a svg {
+    display: none;
+    margin-left: 20px;
+}
+
+header .banner .banner-box .banner-box-text a:hover svg {
+    display: inline-block;
+}
+
+/* Finish Style Website Header */
+
+/* Start Style the About Page*/
+
+/* Start Style the About Title Section*/
+
+.about-title {
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.about-title h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 110px;
+    letter-spacing: 10px;
+    font-weight: 900;
+    display: none;
+}
+
+.about-title h2 {
+    font-size: 26px;
+    font-weight: 900;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+/* Finish Style the About Title Section*/
+
+/* Start Style the About Information Section*/
+
+.about-info .about-boxs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-info .about-boxs .about-boxs-image {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.about-info .about-boxs .about-boxs-image .about-boxs-image-text h3 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.about-info .about-boxs .about-boxs-image .about-boxs-image-image {
+    width: 230px;
+    height: 230px;
+    margin: 30px auto;
+}
+
+.about-info .about-boxs .about-boxs-image .about-boxs-image-image img {
+    width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.about-info .about-boxs .about-left-boxs {
+    display: flex;
+    align-items: flex-start;
+    flex-basis: 100%;
+    justify-content: space-around;
+}
+
+.about-info .about-boxs .about-left-boxs .about-left-box {
+    flex-basis: 40%;
+    margin-bottom: 20px;
+}
+
+.about-info .about-boxs .about-left-boxs .about-left-box p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.about-info .about-boxs .about-left-boxs .about-left-box p span {
+    margin-top: 5px;
+    font-weight: bold;
+    display: block;
+}
+
+.about-info .about-boxs .about-left-boxs .about-left-box a {
+    text-decoration: none;
+    padding: 15px;
+    line-height: 4em;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.about-info .about-boxs .about-left-boxs .about-left-box a span {
+    font-size: 16px;
+}
+
+.about-info .about-boxs .about-left-boxs .about-left-box a svg {
+    display: none;
+    margin-left: 10px;
+}
+
+.about-info .about-boxs .about-left-boxs .about-left-box a:hover svg {
+    display: inline-block;
+}
+
+.about-info .about-boxs .about-right-boxs {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-info .about-boxs .about-right-boxs .about-right-box {
+    flex-basis: 46%;
+    padding: 20px 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.about-info .about-boxs .about-right-boxs .about-right-box h3 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.about-info .about-boxs .about-right-boxs .about-right-box h3 span {
+    font-size: 33px;
+    font-weight: normal;
+    vertical-align: 37%;
+}
+
+.about-info .about-boxs .about-right-boxs .about-right-box .about-right-box-texts {
+    display: flex;
+}
+
+.about-info .about-boxs .about-right-boxs .about-right-box .about-right-box-texts .about-right-box-text span {
+    text-transform: uppercase;
+}
+
+.about-info .about-boxs .about-right-boxs .about-right-box .about-right-box-texts .about-right-box-text:first-of-type {
+    margin-right: 20px;
+}
+
+/* Finish Style the About Information Section*/
+
+/* Start Style the Skills Section*/
+
+.skills .skill-line {
+    height: 1px;
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.skills h3 {
+    text-align: center;
+    margin: 50px 0;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.skills .skills-boxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills .skills-boxs .skills-box {
+    flex-basis: 35%;
+    position: relative;
+}
+
+.skills .skills-boxs .skills-box .circlechart {
+    position: relative;
+}
+
+.skills .skills-boxs .skills-box .skills-box-description {
+    margin: 20px 0 50px;
+    width: 120px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Finish Style the Skills Section*/
+
+/* Start Style the Experience Section*/
+
+.experience .experience-line {
+    height: 1px;
+    width: 40%;
+    margin: auto;
+}
+
+.experience h3 {
+    text-align: center;
+    margin: 50px 0;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.experience .experience-education-boxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.experience .experience-boxs, .experience .education-boxs {
+    flex-basis: 90%;
+    margin: auto;
+}
+
+.experience .experience-boxs .experience-box, .experience .education-boxs .education-box {
+    display: flex;
+    margin-bottom: 50px;
+    position: relative
+}
+
+.experience .experience-boxs .experience-box .experience-box-icon, .experience .education-boxs .education-box .education-box-icon {
+    position: absolute;
+    left: -4%;
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.experience .experience-boxs .experience-box .experience-box-text, .experience .education-boxs .education-box .education-box-text {
+    padding-left: 25px;
+}
+
+.experience .experience-boxs .experience-box .experience-box-text .experience-box-text-year, .experience .education-boxs .education-box .education-box-text .education-box-text-year {
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.experience .experience-boxs .experience-box .experience-box-text h4, .experience .education-boxs .education-box .education-box-text h4 {
+    margin-bottom: 20px;
+}
+
+/* Finish Style the Experience Section*/
+
+/* Finish Style the About Page*/
+
+/* Start Style the Portfolio Page*/
+
+/* Start Style the Portfolio Title Section*/
+
+.portfolio-title {
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.portfolio-title h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 110px;
+    letter-spacing: 10px;
+    font-weight: 900;
+    display: none;
+}
+
+.portfolio-title h2 {
+    font-size: 26px;
+    font-weight: 900;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+/* Finish Style the Portfolio Title Section*/
+
+/* Start Style the Portfolio Information Section*/
+
+.portfolio-info .portfolio-boxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.portfolio-info .portfolio-boxs .portfolio-box {
+    flex-basis: 90%;
+    position: relative;
+    margin: 0 auto 30px;
+}
+
+.portfolio-info .portfolio-boxs .portfolio-box .portfolio-box-text a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+.portfolio-info .portfolio-boxs .portfolio-box .portfolio-box-text span {
+    font-size: 16px;
+    padding: 10px;
+    line-height: 1.8em;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.portfolio-info .portfolio-boxs .portfolio-box .portfolio-box-image {
+    width: 100%;
+    cursor: pointer;
+}
+
+.portfolio-info .portfolio-boxs .portfolio-box .portfolio-box-image img {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* Finish Style the Portfolio Information Section*/
+
+/* Finish Style the Portfolio Page*/
+
+/* Start Style the Contact Page*/
+
+/* Start Style the Contact Title Section*/
+
+.contact-title {
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.contact-title h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 110px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    display: none;
+}
+
+.contact-title h2 {
+    font-size: 26px;
+    font-weight: 900;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+/* Finish Style the Contact Title Section*/
+
+/* Start Style the Contact Information Section*/
+
+.contact-info {
+    margin-bottom: 50px;
+}
+
+.contact-info .contact-boxs {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+
+.contact-info .contact-boxs .contact-left-box {
+    flex-basis: 95%;
+    margin: auto;
+}
+
+.contact-info .contact-boxs .contact-left-box .contact-left-box-text h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.contact-info .contact-boxs .contact-left-box .contact-left-box-text p {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.contact-info .contact-boxs .contact-left-box .contact-left-box-icon {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contact-info .contact-boxs .contact-left-box .contact-left-box-icon-icon {
+    margin-right: 15px;
+    font-size: 40px;
+}
+
+.contact-info .contact-boxs .contact-left-box .contact-left-box-icon-text span {
+    text-transform: uppercase;
+}
+
+.contact-info .contact-boxs .contact-left-box .contact-left-box-icon-text h4 {
+    margin-bottom: 5px;
+}
+
+.contact-info .contact-boxs .contact-right-box {
+    flex-basis: 95%;
+    margin: auto;
+}
+
+.contact-info .contact-boxs .contact-right-box form input {
+    padding: 15px;
+    width: 97%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    display: block;
+}
+
+.contact-info .contact-boxs .contact-right-box form input:last-of-type {
+    margin-right: 0;
+}
+
+.contact-info .contact-boxs .contact-right-box form textarea {
+    display: block;
+    margin: 20px 0;
+    width: 95%;
+    height: 160px;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    resize: none;
+}
+
+.contact-info .contact-boxs .contact-right-box form textarea::placeholder, .contact-info .contact-boxs .contact-right-box form input::placeholder {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.contact-info .contact-boxs .contact-right-box form button {
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 16px;
+    width: fit-content;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+}
+
+.contact-info .contact-boxs .contact-right-box form .button span {
+    margin-right: 10px;
+}
+
+.contact-info .contact-boxs .contact-right-box form button svg {
+    display: none;
+}
+
+.contact-info .contact-boxs .contact-right-box form button:hover svg {
+    display: inline-block;
+}
+
+.contact-info .contact-boxs .contact-right-box .contact-right-box-message {
+    width: 95%;
+    margin: 30px auto;
+    border-radius: 25px;
+    text-align: center;
+    padding: 15px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    display: none;
+}
+
+.contact-info .contact-boxs .contact-right-box .contact-right-box-message span {
+    margin-left: 10px;
+}
+
+/* Finish Style the Contact Information Section*/
+
+/* Finish Style the Contact Page*/
+
+/* Start Style the Loading Section*/
+
+#loading {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999999999;
+    margin-top: 0px;
+    top: 0px;
+}
+
+#loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+#object {
+    width: 80px;
+    height: 80px;
+    -webkit-animation: animate 1s infinite ease-in-out;
+    animation: animate 1s infinite ease-in-out;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+}
+
+@-webkit-keyframes animate {
+    0% {
+        -webkit-transform: perspective(160px);
+    }
+    50% {
+        -webkit-transform: perspective(160px) rotateY(-180deg);
+    }
+    100% {
+        -webkit-transform: perspective(160px) rotateY(-180deg) rotateX(-180deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+        -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+        -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+    }
+}
+
+/* Finish Style the Loading Section*/
