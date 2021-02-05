@@ -763,6 +763,10 @@ header .banner .banner-box .banner-box-text a:hover svg {
     margin: auto;
 }
 
+.contact-info .contact-boxs .contact-left-box .contact-left-box-text {
+    margin-bottom: 30px;
+}
+
 .contact-info .contact-boxs .contact-left-box .contact-left-box-text h3 {
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -770,7 +774,6 @@ header .banner .banner-box .banner-box-text a:hover svg {
 }
 
 .contact-info .contact-boxs .contact-left-box .contact-left-box-text p {
-    margin-bottom: 20px;
     font-size: 15px;
 }
 
