@@ -246,25 +246,30 @@ header .banner .banner-box .banner-box-text a span {
     color: var(--dim-grey-color);
 }
 
-.experience .experience-boxs .experience-box .experience-box-icon, .experience .education-boxs .education-box .education-box-icon {
+.experience .experience-boxs .experience-box .experience-box-icon,
+.experience .education-boxs .education-box .education-box-icon {
     color: var(--white-color);
     background-color: var(--main-color);
 }
 
-.experience .experience-boxs .experience-box .experience-box-text, .experience .education-boxs .education-box .education-box-text {
-    border-left: 1px solid var(--gainsboro-color);
+.experience .experience-boxs .experience-box .experience-box-icon::after,
+.experience .education-boxs .education-box .education-box-icon::after {
+    background-color: var(--gainsboro-color);
 }
 
-.experience .experience-boxs .experience-box .experience-box-text .experience-box-text-year, .experience .education-boxs .education-box .education-box-text .education-box-text-year {
+.experience .experience-boxs .experience-box .experience-box-text .experience-box-text-year,
+.experience .education-boxs .education-box .education-box-text .education-box-text-year {
     background-color: var(--white-smoke-color);
     color: var(--dim-grey-color);
 }
 
-.experience .experience-boxs .experience-box .experience-box-text h4, .experience .education-boxs .education-box .education-box-text h4 {
+.experience .experience-boxs .experience-box .experience-box-text h4,
+.experience .education-boxs .education-box .education-box-text h4 {
     color: var(--dim-grey-color);
 }
 
-.experience .experience-boxs .experience-box .experience-box-text h4 span, .experience .education-boxs .education-box .education-box-text h4 span {
+.experience .experience-boxs .experience-box .experience-box-text h4 span,
+.experience .education-boxs .education-box .education-box-text h4 span {
     color: var(--grey-color)
 }
 
@@ -296,10 +301,11 @@ header .banner .banner-box .banner-box-text a span {
 
 /* Start Style the Portfolio Information Section*/
 
-.portfolio-info .portfolio-boxs .portfolio-box .portfolio-box-text a{
+.portfolio-info .portfolio-boxs .portfolio-box .portfolio-box-text a {
     background-color: var(--main-color);
     color: var(--white-color);
 }
+
 /* Finish Style the Portfolio Information Section*/
 
 /* Finish Style the Portfolio Page*/
@@ -340,19 +346,23 @@ header .banner .banner-box .banner-box-text a span {
     color: var(--dim-grey-color);
 }
 
-.contact-info .contact-boxs .contact-right-box form input, .contact-info .contact-boxs .contact-right-box form textarea {
+.contact-info .contact-boxs .contact-right-box form input,
+.contact-info .contact-boxs .contact-right-box form textarea {
     border: 1px solid var(--gainsboro-color);
 }
 
-.contact-info .contact-boxs .contact-right-box form textarea:focus, .contact-info .contact-boxs .contact-right-box form input:focus {
+.contact-info .contact-boxs .contact-right-box form textarea:focus,
+.contact-info .contact-boxs .contact-right-box form input:focus {
     border: 1px solid var(--main-color);
 }
 
-.contact-info .contact-boxs .contact-right-box form textarea::placeholder, .contact-info .contact-boxs .contact-right-box form input::placeholder {
+.contact-info .contact-boxs .contact-right-box form textarea::placeholder,
+.contact-info .contact-boxs .contact-right-box form input::placeholder {
     color: var(--dim-grey-color);
 }
 
-.contact-info .contact-boxs .contact-right-box form button, .contact-info .contact-boxs .contact-right-box .contact-right-box-message {
+.contact-info .contact-boxs .contact-right-box form button,
+.contact-info .contact-boxs .contact-right-box .contact-right-box-message {
     background-color: var(--main-color);
     color: var(--white-color);
     border: none;
@@ -369,7 +379,7 @@ header .banner .banner-box .banner-box-text a span {
 }
 
 #object {
-    background-color:var(--main-color);
+    background-color: var(--main-color);
 }
 
 /* Finish Style the Loading Section*/
@@ -382,36 +392,47 @@ header .banner .banner-box .banner-box-text a span {
     .about-title {
         background: none;
     }
+
     .about-title h1 {
         color: var(--black-haze-color)
     }
+
     .about-title h2 {
         color: var(--dim-grey-color)
     }
+
     .about-title h2 span {
         color: var(--main-color)
     }
+
     .portfolio-title {
         background: none;
     }
+
     .portfolio-title h1 {
         color: var(--black-haze-color)
     }
+
     .portfolio-title h2 {
         color: var(--dim-grey-color)
     }
+
     .portfolio-title h2 span {
         color: var(--main-color)
     }
+
     .contact-title {
         background: none;
     }
+
     .contact-title h1 {
         color: var(--black-haze-color)
     }
+
     .contact-title h2 {
         color: var(--dim-grey-color)
     }
+
     .contact-title h2 span {
         color: var(--main-color)
     }
@@ -423,28 +444,36 @@ header .banner .banner-box .banner-box-text a span {
     header .top-bar nav ul {
         background: none;
     }
+
     header .top-bar nav ul li {
         border-bottom: none;
         background-color: var(--white-smoke-color);
     }
+
     header .top-bar nav ul li.active {
         background-color: var(--main-color);
     }
+
     header .top-bar nav ul li:hover {
         background-color: var(--main-color);
     }
+
     header .top-bar nav ul li {
         color: var(--dim-grey-color);
     }
+
     header .top-bar nav ul li a {
         color: var(--white-color);
     }
+
     header .top-bar nav ul li.active a svg {
         color: var(--white-color);
     }
+
     header .top-bar nav ul li:hover svg {
         color: var(--white-color);
     }
+
     header .top-bar nav ul li a span {
         color: var(--white-color);
     }
