@@ -6,10 +6,12 @@
     .container {
         max-width: 540px;
     }
+
     header .banner .banner-box {
         flex-direction: column;
-        margin-top: 120px;
+        margin-top: 60px;
     }
+
     header .banner .banner-box .banner-box-image {
         border-radius: 50%;
         -webkit-border-radius: 50%;
@@ -21,9 +23,11 @@
         height: 270px;
         margin: 0 auto;
     }
+
     header .banner .banner-box div:nth-child(1) {
         display: none;
     }
+
     header .banner .banner-box .banner-box-image img {
         border-radius: 50%;
         -webkit-border-radius: 50%;
@@ -31,89 +35,136 @@
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
     }
+
     header .banner .banner-box .banner-box-text span {
         display: none;
     }
+
     header .banner .banner-box .banner-box-text h2 {
         text-align: center;
     }
+
     header .banner .banner-box .banner-box-text h2 span {
         display: inline-block;
     }
+
     header .banner .banner-box .banner-box-text p {
         text-align: center;
         padding: 0 20px;
     }
+
     header .banner .banner-box .banner-box-text .banner-box-text-link {
         width: fit-content;
         margin: auto;
     }
+
     header .banner .banner-box .banner-box-text a span {
         display: inline-block;
     }
+
     .about-title {
         position: relative;
     }
+
     .about-title h1 {
         display: block;
         font-size: 68px;
     }
+
     .about-title h2 {
         font-size: 34px;
         position: absolute;
         top: 11px;
         text-align: center;
     }
+
     .about-info .about-boxs .about-boxs-image {
         margin: 30px 3.25% 20px;
     }
+
     .about-info .about-boxs .about-boxs-image .about-boxs-image-text h3 {
         font-size: 26px;
     }
+
     .about-info .about-boxs .about-boxs-image .about-boxs-image-image {
         display: none;
     }
+
+    .about-info .about-boxs .about-left-boxs {
+        padding-bottom: 0;
+    }
+
     .about-info .about-boxs .about-left-boxs .about-left-box:last-of-type {
         flex-basis: 47%;
     }
+
     .about-info .about-boxs .about-left-boxs .about-left-box p {
         font-size: 15px;
     }
+
     .about-info .about-boxs .about-left-boxs .about-left-box p span {
         display: inline-block;
     }
+
+    .about-info .about-boxs .about-left-boxs .about-left-box a {
+        position: static;
+        line-height: 4em;
+    }
+
     .about-info .about-boxs .about-right-boxs {
         margin-top: 20px;
+        justify-content: space-between;
+
     }
+
+    .about-info .about-boxs .about-right-boxs .about-right-box {
+        flex-basis: 45%;
+    }
+
+    .skills .skills-boxs {
+        justify-content: space-between;
+    }
+
+    .skills .skills-boxs .skills-box {
+        flex-basis: 50%;
+    }
+
     .portfolio-title {
         position: relative;
     }
+
     .portfolio-title h1 {
         display: block;
         font-size: 68px;
     }
+
     .portfolio-title h2 {
         font-size: 34px;
         position: absolute;
         top: 11px;
         text-align: center;
     }
+
     .portfolio-info .portfolio-boxs {
         padding-top: 60px;
     }
+
     .contact-title {
         position: relative;
     }
+
     .contact-title h1 {
         display: block;
         font-size: 68px;
     }
+
     .contact-title h2 {
         font-size: 34px;
         position: absolute;
         top: 11px;
         text-align: center;
     }
+
     .contact-info .portfolio-boxs {
         padding-top: 60px;
     }
@@ -125,36 +176,51 @@
     .container {
         max-width: 720px;
     }
+
     .about-title h1 {
         font-size: 100px;
     }
+
     .about-title h2 {
         font-size: 50px;
         top: 25px;
     }
+
+    .about-info .about-boxs .about-right-boxs .about-right-box {
+        flex-basis: 40%;
+    }
+
     .skills .skills-boxs .skills-box {
         flex-basis: 22%;
     }
-    .experience .experience-boxs .experience-box .experience-box-icon, .experience .education-boxs .education-box .education-box-icon {
+
+    .experience .experience-boxs .experience-box .experience-box-icon,
+    .experience .education-boxs .education-box .education-box-icon {
         left: -3%;
     }
+
     .portfolio-title h1 {
         font-size: 100px;
     }
+
     .portfolio-title h2 {
         font-size: 50px;
         top: 25px;
     }
+
     .portfolio-info .portfolio-boxs .portfolio-box {
         flex-basis: 45%;
     }
+
     .contact-title h1 {
         font-size: 90px;
     }
+
     .contact-title h2 {
         font-size: 45px;
         top: 20px;
     }
+
     .contact-info .contact-boxs .contact-right-box form input {
         width: 28%;
         margin: 0 5% 0 0;
@@ -168,13 +234,16 @@
     .container {
         max-width: 960px;
     }
+
     header .top-bar .mobile-btn {
         display: none;
     }
+
     header .banner .banner-box {
         flex-direction: row;
         margin-top: 0;
     }
+
     header .banner .banner-background {
         transform: rotate(75deg) translateY(100%);
         -webkit-transform: rotate(75deg) translateY(100%);
@@ -183,6 +252,7 @@
         -o-transform: rotate(75deg) translateY(100%);
         display: block;
     }
+
     header .banner .banner-box .banner-box-image {
         border-radius: 0;
         -webkit-border-radius: 0;
@@ -193,12 +263,15 @@
         height: 100%;
         margin: 0;
     }
+
     header .banner .banner-box div:nth-child(1) {
         display: inline-block;
     }
+
     header .banner .banner-box div:nth-child(2) {
         display: none;
     }
+
     header .banner .banner-box .banner-box-image img {
         border-radius: 5%;
         -webkit-border-radius: 5%;
@@ -206,6 +279,7 @@
         -ms-border-radius: 5%;
         -o-border-radius: 5%;
     }
+
     header .top-bar nav ul {
         position: fixed;
         left: auto;
@@ -218,13 +292,17 @@
         height: fit-content;
         align-items: flex-end;
     }
+
     header .top-bar nav ul.allpages {
         top: 200px;
     }
+
     header .top-bar nav ul.show-nav {
         left: auto;
     }
+
     header .top-bar nav ul li {
+        padding: 0;
         width: 50px;
         height: 50px;
         border-radius: 30px;
@@ -232,60 +310,82 @@
         -moz-border-radius: 30px;
         -ms-border-radius: 30px;
         -o-border-radius: 30px;
-        cursor: pointer;
-        transition: all 0.5s ease-in-out;
-        -webkit-transition: all 0.5s ease-in-out;
-        -moz-transition: all 0.5s ease-in-out;
-        -ms-transition: all 0.5s ease-in-out;
-        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
     }
+
+    header .top-bar nav ul li:first-of-type a {
+        padding: 12px 13px 0;
+    }
+
     header .top-bar nav ul li:hover {
         width: fit-content;
     }
+
     header .top-bar nav ul li:not(:last-of-type) {
         margin-bottom: 20px;
     }
+
     header .top-bar nav ul li.active a {
         font-weight: normal;
     }
+
     header .top-bar nav ul li a {
         text-decoration: none;
+        position: relative;
         width: 100%;
-        display: flex;
-        font-size: 15px;
+        height: 100%;
+        display: block;
+        font-size: 20px;
+        padding: 12px 15px 0;
+        text-align: end;
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -ms-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
     }
+
     header .top-bar nav ul li a svg {
-        margin: auto;
         order: 2;
     }
+
     header .top-bar nav ul li a span {
         text-transform: uppercase;
         order: 1;
-        display: none;
+        font-size: 15px;
+        margin: 0;
+        position: absolute;
+        opacity: 0;
+        transition: all 0.3s ease-in-out, opacity 0.1ms, position 0.1ms;
+        -webkit-transition: all 0.3s ease-in-out, opacity 0.1ms, position 0.1ms;
+        -moz-transition: all 0.3s ease-in-out, opacity 0.1ms, position 0.1ms;
+        -ms-transition: all 0.3s ease-in-out, opacity 0.1ms, position 0.1ms;
+        -o-transition: all 0.3s ease-in-out, opacity 0.1ms, position 0.1ms;
     }
+
     header .top-bar nav ul li:hover a span {
-        display: inline-block;
-        right: 27px;
-        text-align: center;
-        border-radius: 30px 0 0 30px;
-        -webkit-border-radius: 30px 0 0 30px;
-        -moz-border-radius: 30px 0 0 30px;
-        -ms-border-radius: 30px 0 0 30px;
-        -o-border-radius: 30px 0 0 30px;
+        position: static;
+        opacity: 1;
+        margin-right: 10px;
     }
-    header .top-bar nav ul li:hover a svg {
-        margin: 0 15px;
-    }
+
     header .color-setting {
         visibility: visible;
     }
+
     header .banner .banner-box {
         margin-top: 50px;
     }
+
     header .banner .banner-box .banner-box-image {
         flex-basis: 35%;
         margin: 30px 0 0 30px;
     }
+
     header .banner .banner-box .banner-box-image img {
         border-radius: 5px;
         -webkit-border-radius: 5px;
@@ -293,100 +393,129 @@
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
     }
+
     header .banner .banner-box .banner-box-text {
         flex-basis: 50%;
     }
+
     header .banner .banner-box .banner-box-text span {
         display: block;
     }
+
     header .banner .banner-box .banner-box-text h2 {
         text-align: left;
     }
+
     header .banner .banner-box .banner-box-text p {
         font-size: 17px;
         padding: 0;
         padding-right: 100px;
         text-align: left;
     }
+
     header .banner .banner-box .banner-box-text .banner-box-text-link {
         margin: 0;
     }
+
     .about-title h1 {
         font-size: 110px;
     }
+
     .about-title h2 {
         font-size: 55px;
         top: 25px;
     }
+
     .about-info .about-boxs .about-left-boxs {
         flex-basis: 47%;
         margin-left: 20px;
     }
+
     .about-info .about-boxs .about-left-boxs .about-left-box:first-of-type {
         flex-basis: 42%;
     }
+
     .about-info .about-boxs .about-left-boxs .about-left-box:last-of-type {
         flex-basis: 55%;
     }
+
     .about-info .about-boxs .about-right-boxs {
         flex-basis: 44%;
         margin-top: 0;
     }
+
     .about-info .about-boxs .about-right-boxs .about-right-box {
-        flex-basis: 48%;
+        flex-basis: 47%;
+        padding: 20px;
     }
+
     .skills .skills-boxs {
         justify-content: flex-end;
         width: 90%;
         margin: auto;
     }
+
     .experience .experience-education-boxs {
         flex-wrap: nowrap;
         justify-content: space-between;
         width: 90%;
         margin: auto;
     }
+
     .experience h3 {
         margin: 60px 0;
     }
-    .experience .experience-boxs, .experience .education-boxs {
+
+    .experience .experience-boxs,
+    .experience .education-boxs {
         flex-basis: 45%;
         margin: 0;
     }
-    .experience .experience-boxs .experience-box .experience-box-icon, .experience .education-boxs .education-box .education-box-icon {
+
+    .experience .experience-boxs .experience-box .experience-box-icon,
+    .experience .education-boxs .education-box .education-box-icon {
         left: -5%;
     }
+
     .portfolio-title h1 {
         font-size: 110px;
     }
+
     .portfolio-title h2 {
         font-size: 55px;
         top: 25px;
     }
+
     .portfolio-info .portfolio-boxs {
         justify-content: center;
         width: 95%;
         margin: auto;
     }
+
     .portfolio-info .portfolio-boxs .portfolio-box {
         flex-basis: 28%;
         margin: 0 30px 30px 0;
     }
+
     .contact-info {
         margin-bottom: 0;
     }
+
     .contact-info .contact-boxs {
         flex-wrap: nowrap;
         justify-content: space-around;
     }
+
     .contact-info .contact-boxs .contact-left-box {
         flex-basis: 30%;
         margin: 0;
     }
+
     .contact-info .contact-boxs .contact-right-box {
         flex-basis: 60%;
         margin: 0;
     }
+
     .contact-info .contact-boxs .contact-right-box form input {
         width: 30%;
         margin: 0px 2% 0 0;
@@ -399,9 +528,11 @@
     .container {
         max-width: 1140px;
     }
+
     header .banner .banner-box {
         margin-top: 0;
     }
+
     header .banner .banner-background {
         transform: rotate(75deg) translateY(113%);
         -webkit-transform: rotate(75deg) translateY(113%);
@@ -409,30 +540,40 @@
         -ms-transform: rotate(75deg) translateY(113%);
         -o-transform: rotate(75deg) translateY(113%);
     }
+
     .about-info .about-boxs .about-boxs-image {
         margin: 30px 2% 20px;
     }
+
     .about-info .about-boxs {
         justify-content: space-around;
         width: 96%;
     }
+
     .about-info .about-boxs .about-left-boxs {
         margin-left: 0;
     }
+
     .about-info .about-boxs .about-right-boxs {
         flex-basis: 50%;
     }
+
     .about-info .about-boxs .about-right-boxs .about-right-box {
         flex-basis: 47%;
         margin-bottom: 30px;
+        padding: 20px 30px;
     }
-    .experience .experience-boxs .experience-box .experience-box-icon, .experience .education-boxs .education-box .education-box-icon {
+
+    .experience .experience-boxs .experience-box .experience-box-icon,
+    .experience .education-boxs .education-box .education-box-icon {
         left: -4%;
     }
+
     .portfolio-info .portfolio-boxs {
         width: 100%;
         margin: 0;
     }
+
     .portfolio-info .portfolio-boxs .portfolio-box {
         flex-basis: 29%;
     }
