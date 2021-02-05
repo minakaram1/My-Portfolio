@@ -81,7 +81,7 @@ header .top-bar nav ul li a span {
 header .top-bar .mobile-btn {
     position: absolute;
     padding: 8px;
-    left: 85%;
+    right: 5%;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -222,7 +222,8 @@ header .color-setting .color-setting-colors .color-setting-color {
     cursor: pointer;
 }
 
-header .color-setting .color-setting-colors .color-setting-color.active, header .banner .color-setting .color-setting-colors .color-setting-color:hover {
+header .color-setting .color-setting-colors .color-setting-color.active,
+header .banner .color-setting .color-setting-colors .color-setting-color:hover {
     opacity: 1;
 }
 
@@ -253,7 +254,7 @@ header .banner .banner-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 300px;
+    margin-top: 150px;
 }
 
 header .banner .banner-box .banner-box-image {
@@ -311,12 +312,18 @@ header .banner .banner-box .banner-box-text a span {
 }
 
 header .banner .banner-box .banner-box-text a svg {
-    display: none;
-    margin-left: 20px;
+    margin-left: -15px;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
 }
 
 header .banner .banner-box .banner-box-text a:hover svg {
-    display: inline-block;
+    margin-left: 10px;
+    opacity: 1;
 }
 
 /* Finish Style Website Header */
@@ -388,6 +395,8 @@ header .banner .banner-box .banner-box-text a:hover svg {
     align-items: flex-start;
     flex-basis: 100%;
     justify-content: space-around;
+    position: relative;
+    padding-bottom: 60px;
 }
 
 .about-info .about-boxs .about-left-boxs .about-left-box {
@@ -408,8 +417,10 @@ header .banner .banner-box .banner-box-text a:hover svg {
 
 .about-info .about-boxs .about-left-boxs .about-left-box a {
     text-decoration: none;
+    position: absolute;
+    bottom: 30px;
     padding: 15px;
-    line-height: 4em;
+    line-height: 1em;
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
@@ -417,6 +428,7 @@ header .banner .banner-box .banner-box-text a:hover svg {
     -o-border-radius: 25px;
     text-transform: uppercase;
     font-weight: bold;
+
 }
 
 .about-info .about-boxs .about-left-boxs .about-left-box a span {
@@ -424,23 +436,29 @@ header .banner .banner-box .banner-box-text a:hover svg {
 }
 
 .about-info .about-boxs .about-left-boxs .about-left-box a svg {
-    display: none;
-    margin-left: 10px;
+    margin-left: -15px;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
 }
 
 .about-info .about-boxs .about-left-boxs .about-left-box a:hover svg {
-    display: inline-block;
+    margin-left: 10px;
+    opacity: 1;
 }
 
 .about-info .about-boxs .about-right-boxs {
     display: flex;
     flex-basis: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .about-info .about-boxs .about-right-boxs .about-right-box {
-    flex-basis: 46%;
+    flex-basis: 90%;
     padding: 20px 30px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -498,16 +516,18 @@ header .banner .banner-box .banner-box-text a:hover svg {
 }
 
 .skills .skills-boxs .skills-box {
-    flex-basis: 35%;
+    flex-basis: 55%;
     position: relative;
 }
 
 .skills .skills-boxs .skills-box .circlechart {
-    position: relative;
+    /* position: relative; */
+    width: fit-content;
+    margin: auto;
 }
 
 .skills .skills-boxs .skills-box .skills-box-description {
-    margin: 20px 0 50px;
+    margin: 20px auto 50px;
     width: 120px;
     text-align: center;
     text-transform: uppercase;
@@ -537,35 +557,51 @@ header .banner .banner-box .banner-box-text a:hover svg {
     margin-top: 80px;
 }
 
-.experience .experience-boxs, .experience .education-boxs {
+.experience .experience-boxs,
+.experience .education-boxs {
     flex-basis: 90%;
     margin: auto;
 }
 
-.experience .experience-boxs .experience-box, .experience .education-boxs .education-box {
+.experience .experience-boxs .experience-box,
+.experience .education-boxs .education-box {
     display: flex;
     margin-bottom: 50px;
     position: relative
 }
 
-.experience .experience-boxs .experience-box .experience-box-icon, .experience .education-boxs .education-box .education-box-icon {
-    position: absolute;
-    left: -4%;
-    padding: 10px;
+.experience .experience-boxs .experience-box .experience-box-icon,
+.experience .education-boxs .education-box .education-box-icon {
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     height: 40px;
-    width: 40px;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.experience .experience-boxs .experience-box .experience-box-text, .experience .education-boxs .education-box .education-box-text {
-    padding-left: 25px;
+.experience .experience-boxs .experience-box .experience-box-icon::after,
+.experience .education-boxs .education-box .education-box-icon::after {
+    content: "";
+    height: 70%;
+    width: 1px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    background-color: rgb(95, 94, 94);
 }
 
-.experience .experience-boxs .experience-box .experience-box-text .experience-box-text-year, .experience .education-boxs .education-box .education-box-text .education-box-text-year {
+.experience .experience-boxs .experience-box .experience-box-text,
+.experience .education-boxs .education-box .education-box-text {
+    padding-left: 10px;
+}
+
+.experience .experience-boxs .experience-box .experience-box-text .experience-box-text-year,
+.experience .education-boxs .education-box .education-box-text .education-box-text-year {
     width: fit-content;
     padding: 5px 10px;
     font-size: 14px;
@@ -577,7 +613,8 @@ header .banner .banner-box .banner-box-text a:hover svg {
     -o-border-radius: 30px;
 }
 
-.experience .experience-boxs .experience-box .experience-box-text h4, .experience .education-boxs .education-box .education-box-text h4 {
+.experience .experience-boxs .experience-box .experience-box-text h4,
+.experience .education-boxs .education-box .education-box-text h4 {
     margin-bottom: 20px;
 }
 
@@ -643,6 +680,7 @@ header .banner .banner-box .banner-box-text a:hover svg {
     cursor: pointer;
     display: none;
 }
+
 .portfolio-info .portfolio-boxs .portfolio-box .portfolio-box-text span {
     font-size: 16px;
     padding: 10px;
@@ -653,11 +691,11 @@ header .banner .banner-box .banner-box-text a:hover svg {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .portfolio-info .portfolio-boxs .portfolio-box .portfolio-box-image {
@@ -791,7 +829,8 @@ header .banner .banner-box .banner-box-text a:hover svg {
     resize: none;
 }
 
-.contact-info .contact-boxs .contact-right-box form textarea::placeholder, .contact-info .contact-boxs .contact-right-box form input::placeholder {
+.contact-info .contact-boxs .contact-right-box form textarea::placeholder,
+.contact-info .contact-boxs .contact-right-box form input::placeholder {
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -809,21 +848,24 @@ header .banner .banner-box .banner-box-text a:hover svg {
     cursor: pointer;
 }
 
-.contact-info .contact-boxs .contact-right-box form .button span {
-    margin-right: 10px;
-}
-
 .contact-info .contact-boxs .contact-right-box form button svg {
-    display: none;
+    margin-left: -15px;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
 }
 
 .contact-info .contact-boxs .contact-right-box form button:hover svg {
-    display: inline-block;
+    margin-left: 10px;
+    opacity: 1;
 }
 
 .contact-info .contact-boxs .contact-right-box .contact-right-box-message {
     width: 95%;
-    margin: 30px auto;
+    margin: 30px auto 0;
     border-radius: 25px;
     text-align: center;
     padding: 15px;
@@ -883,9 +925,11 @@ header .banner .banner-box .banner-box-text a:hover svg {
     0% {
         -webkit-transform: perspective(160px);
     }
+
     50% {
         -webkit-transform: perspective(160px) rotateY(-180deg);
     }
+
     100% {
         -webkit-transform: perspective(160px) rotateY(-180deg) rotateX(-180deg);
     }
@@ -896,10 +940,12 @@ header .banner .banner-box .banner-box-text a:hover svg {
         transform: perspective(160px) rotateX(0deg) rotateY(0deg);
         -webkit-transform: perspective(160px) rotateX(0deg) rotateY(0deg);
     }
+
     50% {
         transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
         -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
     }
+
     100% {
         transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
         -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
